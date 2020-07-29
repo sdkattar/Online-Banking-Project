@@ -1,0 +1,7 @@
+INDEX VERSION 1.4+/home/sunbeam/java_help/webProj1/.metadata/.plugins/org.eclipse.wst.jsdt.core/indexes
+1485167654.index
+4198394763.index
+3973228864.index
+2037454049.index
+1909881516.index
+4032785529.index

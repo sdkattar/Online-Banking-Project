@@ -1,0 +1,33 @@
+<form #myform="ngForm" (ngSubmit)="transfermoney(myform)" class="form-inline" role="form">
+
+
+  <div class="col-sm-6 form-group">
+    <h1 class="well">Transfer Money</h1>
+
+    <div class="col-sm-6 form-group">
+      <label for="Account">From</label>
+
+      <select name="account_no" ngModel id="from_acc_no" class="form-control" required="required">
+        <option *ngFor="let cust of customers.account" value="{{cust.account_no}}"> {{cust.account_no}} </option>
+
+      </select>
+
+    </div>
+
+    <div class="col-sm-6 form-group">
+      <label for="to_Account">To</label>
+      <input type="number" ngModel class="form-control" id="" name="to_account" placeholder="Enter Account No">
+    </div>
+
+    <div class="col-sm-6 form-group">
+      <label for="to_Account">Amount</label>
+      <input type="number" ngModel class="form-control" id="" name="amount" placeholder="Enter Amount">
+    </div>
+
+    <br>
+    <br><br><br>
+    <div class="col-sm-6 form-group">
+      <button type="submit" class="btn btn-primary">Transfer</button>
+    </div>
+  </div>
+</form>

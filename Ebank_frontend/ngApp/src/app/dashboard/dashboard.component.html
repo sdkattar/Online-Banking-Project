@@ -1,0 +1,42 @@
+<div style="background-color: black; opacity: 0.7;">
+    <h1 style="color: blanchedalmond;">
+    Welcome {{name}} !
+    </h1>
+</div>
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-2 col-sm-4 sidebar1">
+              
+                <br>
+                <div class="left-navigation">
+                    <ul class="list">
+                        <h5><strong>ADMIN</strong></h5>
+                       <li > <a routerLink="/dash/customerdetails" style="color: azure;">Customer Details</a></li>
+                       <li > <a routerLink="/dash/addmanager" style="color: azure;">Add Manager</a></li>
+                       <li > <a routerLink="/dash/showmanager" style="color: azure;">Show Manager</a></li>
+                       <li > <a routerLink="/dash/addcustomer" style="color: azure;">Add Customer</a></li>
+                       <!-- <li > <a routerLink="/dash/postnews" style="color: azure;">Post News</a></li> -->                  
+                     </ul> 
+
+                    <br>
+
+    
+                </div>
+            </div>
+
+            <div ng-include src="customerdetails.html">
+                    <div class="col-sm-4 col-sm-4 main-content">
+                     
+                  </div>
+              </div>
+           
+        
+        <div>
+    </div>
+
+    <router-outlet></router-outlet>

@@ -1,0 +1,21 @@
+
+<div class="container" style="float: ;">
+  <form #myForm="ngForm" (ngSubmit)="updatepass(myForm.value)" role="form">
+<legend >Change password</legend>
+
+<div class="form-group">
+  <label for="">Enter OTP</label>
+  <input ngModel style="width: 300px;" type="number" class="form-control" name="otp"  id="" placeholder="">
+</div>
+
+<div class="form-group">
+    <label for="password">Enter New password</label>
+    <input required="required" ngModel style="width: 300px;"  type="text" class="form-control" name="password" id="" placeholder="">
+  </div>
+<button type="submit" class="btn btn-primary">Submit</button>
+</form>
+
+<br>
+<span *ngIf="!flag" style="color: red;">{{msg}}</span>
+<a *ngIf="flag" style="color: blue;"  (click)="navigate()" >{{msg}} <br> Goto login page </a>
+</div>

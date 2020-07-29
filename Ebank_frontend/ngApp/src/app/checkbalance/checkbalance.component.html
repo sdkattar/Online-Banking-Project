@@ -1,0 +1,64 @@
+<!-- 
+<div class="table-responsive">
+  <table class="table table-hover">
+    
+    <tbody>
+      <tr>
+        <td>Account No</td>
+        <td>{{customers.account_no}}</td>
+      </tr>
+      <tr>
+        <td>Balance</td>
+        <td>{{customers.balance}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+ -->
+
+
+
+ <div class="col-md-10 col-sm-8 main-content">
+   <h2 style="color: coral;">Account Details :</h2>
+  
+
+<div>
+<div class="table-responsive">
+<table class="table table-hover">
+<thead>
+      <tr>
+        <th>Account No</th>
+        <th>Balance</th>
+        <th>Account Type</th>
+      </tr>
+</thead>
+<tbody>
+
+  <!-- <tr>
+  <td>{{customers.account[0].account_no}}</td>
+  <td>{{customers.account[0].balance}}</td>
+  <td>{{customers.account[0].acc_type}}</td>
+</tr>
+  <tr>
+  <td>{{customers.account[1].account_no}}</td>
+  <td>{{customers.account[1].balance}}</td>
+  <td>{{customers.account[1].acc_type}}</td>
+
+</tr> -->
+
+<tr *ngFor="let customer of customers.account"> 
+    <td>{{customer.account_no}}</td>
+    <td>{{customer.balance}}</td>
+    <td>{{customer.acc_type}}</td>
+  
+  </tr>
+
+
+</tbody>
+</table>
+<input type="button" (click)="goBack()" class="btn btn-primary" value="go back">
+
+</div>
+</div>
+
+</div> 

@@ -1,0 +1,108 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+<div style="color:chocolate">
+<div class="header">    
+ <h3>Welcome To Online Banking</h3>
+</div>
+</div>
+
+
+<div id="slider">
+        <figure>
+        <!-- <img src="assets/img2.jpeg " alt="Image" width=100% height=300px> -->
+        <img src="assets/photo1.jpg" alt="Image" width=100% height=300px> 
+        <img src="assets/img5.jpg" alt="Image" width=100% height=300px>
+        <img src="assets/i4.jpg" alt="Image" width=100% height=300px>
+        <img src="assets/i2.jpg" alt="Image" width=100% height=300px>
+        <img src="assets/photo1.jpg" alt="Image" width=100% height=300px>
+        </figure>
+    </div>
+    
+    <!-- <a class="navbar-brand" style="background:black;width:100%;height:5%;"  href="/"><h2 style="text-align: center;color: blueviolet">Welcome To Online Banking</h2></a> -->
+
+
+
+
+<nav class="navbar navbar-inverse" style="background-color:black">
+    <!-- <a class="navbar-brand" href="#">Title</a>  -->
+    <ul class="nav navbar-nav">
+        <li class="">
+            <a routerLink="/home">Home</a>
+        </li>
+        <li>
+            <a routerLink="/about">About Us</a>
+        </li>
+        <li>
+            <a routerLink="/contact">Contact Us</a>
+        </li>
+        <li>
+            <a routerLink="/help">Help</a>
+        </li>
+        <!-- <li>
+            <a routerLink="/login">Login</a>
+        </li> -->
+        <li>
+            <a routerLink="/add">Sign Up</a>
+        </li>
+
+
+        <li *ngIf="!isLogin">
+            <a routerLink="/login">Login</a>
+        </li>
+ 
+        <li *ngIf="isLogin">
+            <a (click)="logout()"><button type="button" class="btn btn-danger" style="float: right" >Logout</button></a>
+        </li> 
+
+
+        <!-- <li *ngIf="isLogin">
+<button type="button"  style="float:right;" (click)="logout()">button</button> 
+</li>  -->
+
+    </ul>
+
+    <!-- <div ng-init="myvar='i1.jpeg'">
+    <img ng-src="{{myvar}}">
+    </div>  -->
+
+</nav>
+
+
+<router-outlet></router-outlet>
+
+
+
+ <br>
+      <div class="panel-footer" style="background-color: black;text-align: center;border-style: solid;border-color:grey">
+            
+        <div>
+              <!-- Add font awesome icons -->
+<a href="https://www.facebook.com" class="fa fa-facebook"></a>
+<a href="https://www.twitter.com" class="fa fa-twitter"></a> 
+<a href="https://www.youtube.com" class="fa fa-youtube"></a> 
+<a href="http://www.instagram.com" class="fa fa-instagram"></a> 
+        </div>
+        
+        <div>&copy;2020 copyright:
+          <br>
+             1)Sadik Attar
+         <br>
+             2)Vikas Deep
+            </div>
+          
+        </div>
+
+        
+
+
+  
+
+
+
+
+
+
+<!-- <a routerLink="/home">Home | </a>
+<a routerLink="/contact">Contact Us</a> --> 

@@ -1,0 +1,61 @@
+<div class="col-md-8">
+
+  <!-- <h2>Customer Details :</h2> -->
+
+
+  <!-- <div class="col-sm-8 well"> -->
+  <form>
+    <div class="col-md-8">
+
+      <table style="background:white;color: green;height: 32%;width: 25%" >
+        <thead>
+          <tr>
+            <th>UserId&nbsp;&nbsp;</th>
+            <th>Name</th>
+            <!-- <th>Account No</th>
+            <th>Account Type</th>
+            <th>Balance</th> -->
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let customer of customers"> 
+            <td>{{customer.id}}</td>
+            <td>{{customer.name}}</td>
+
+              <table class="table table-hover" style="color: orangered;height: 25%;width: 23%;">
+                <tr>
+                    <th>Account No</th>
+                    <th>Account Type</th>
+                    <th>Balance</th>
+                </tr>
+              
+                <tr *ngFor="let acc of customer.account">
+                  
+                   <td>{{acc.account_no}}</td>
+                   <td>{{acc.acc_type}}</td>
+                   <td>{{acc.balance}}</td>
+                
+                </tr>
+                <br>
+              </table>
+            <!-- <td><a routerLink="/showcustomerdetails">Show Details</a></td> -->
+            <td>
+                <button type="button" (click)="editUser(customer.id)" class="btn btn-large btn-block btn-primary">Edit</button>
+            </td>
+            <td>
+            <!-- <button type="button" (click)="deleteUser()" class="btn btn-large btn-block btn-danger">Delete</button> -->
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+       </div>
+  </form>
+</div>
+
+
+
+
+
+<router-outlet></router-outlet>

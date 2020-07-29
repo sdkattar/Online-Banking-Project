@@ -1,0 +1,49 @@
+<h3 style="color: darkorchid;">
+    Welcome {{name}}.!
+  </h3>
+  
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+  <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+  <!------ Include the above in your HEAD tag ---------->
+  
+      <div class="container-fluid">
+          <div class="row">
+              <div class="col-md-2 col-sm-4 sidebar1">
+                  <!-- <div class="logo">
+                      <img src="http://lorempixel.com/output/people-q-g-64-64-1.jpg" class="img-responsive center-block" alt="Logo">
+                  </div> -->
+                  <br>
+                  <div class="left-navigation">
+                      <ul class="list">
+                          <h5><strong>CUSTOMER</strong></h5>
+                          <li > <a routerLink="/customerdashboard/createaccount" style="color: azure;">Create Account</a></li>
+                         <li > <a routerLink="/customerdashboard/fundtransfer" style="color: azure;">Transfer Money</a></li>
+                         <li > <a routerLink="/customerdashboard/editprofile" style="color: azure;">Edit Profile</a></li>
+                      <li > <a routerLink="/customerdashboard/checkbalance" style="color: azure;">Check balance</a></li>
+                      <!-- <li > <a routerLink="/customerdashboard/ministatement" style="color: azure;">Mini statement</a></li>
+                      <li > <a routerLink="/customerdashboard/transactionhistory" style="color: azure;">Transaction history</a></li> -->
+                         <!-- <li > <a routerLink="/customerdashboard/applyforloan" style="color: azure;">Apply for Loan</a></li>
+                         <li > <a routerLink="/customerdashboard/applyforcards" style="color: azure;">Apply for Cards</a></li>          -->
+
+                        
+                     </ul>
+                         <br>
+  
+                  </div>
+              </div>
+              <div ng-include src="createaccount.html">
+                <div class="col-sm-8 col-sm-8 main-content">
+                    <!-- Main content code to be written here -->
+                     <!-- <h3>User Details :</h3> -->
+                     <div>
+                         
+                     </div>
+              </div>
+          </div>
+          <div>
+  <!-- Hello from parent
+  <ng-content select=".txt"></ng-content> -->
+</div>
+  
+      <router-outlet></router-outlet>

@@ -1,0 +1,43 @@
+<div style="background-color: black; opacity: 0.7;">
+        <h1 style="color: blanchedalmond;">
+        Welcome {{name}}.!
+        </h1>
+    </div>
+
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-2 col-sm-12 sidebar1">
+                <!-- <div class="logo">
+                    <img src="http://lorempixel.com/output/people-q-g-64-64-1.jpg" class="img-responsive center-block" alt="Logo">
+                </div> -->
+                <br>
+                <div class="left-navigation">
+                    <ul class="list">
+                        <h5><strong>MANAGER</strong></h5>
+                       <li > <a routerLink="/managerdashboard/customerdetails" style="color: azure;">Customer Details</a></li>
+                       <!-- <li > <a routerLink="/managerdashboard/loanrequest" style="color: azure;">Loan Requests</a></li>
+                       <li > <a routerLink="/managerdashboard/showcustomerrequest" style="color: azure;">Customer's Requests</a></li>
+                       <li > <a routerLink="/managerdashboard/showcardrequest" style="color: azure;">Card Requests</a></li> -->
+                </ul>
+
+                    <br>
+
+                
+                </div>
+            </div>
+
+            <div ng-include src="createaccount.html">
+                    <div class="col-sm-4 col-sm-4 main-content">
+                    
+                  </div>
+              </div>
+
+              <div>
+    </div>
+
+    <router-outlet></router-outlet>
